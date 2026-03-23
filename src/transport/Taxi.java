@@ -40,7 +40,7 @@ public class Taxi extends JFrame {
                         return;
                     }
 
-                    // 🚕 ค่าโดยสาร
+                    //  ค่าโดยสาร
                     double baseFare = 35;
 
                     double distanceFare = 0;
@@ -48,7 +48,7 @@ public class Taxi extends JFrame {
                         distanceFare = (distance - 1) * 6.5;
                     }
 
-                    // 🚦 รถติด
+                    //  รถติด
                     String jamInput = JOptionPane.showInputDialog("Traffic jam (minutes, 0 if none):");
                     double jamMinutes = (jamInput == null || jamInput.isEmpty()) ? 0 : Double.parseDouble(jamInput);
 
@@ -56,14 +56,14 @@ public class Taxi extends JFrame {
 
                     double total = baseFare + distanceFare + jamFare;
 
-                    // ⏱ เวลาเดินทาง
+                    //  เวลาเดินทาง
                     double speed = 30.0; // km/h
                     double timeHour = distance / speed;
 
                     int hour = (int) timeHour;
                     int minute = (int) ((timeHour - hour) * 60);
 
-                    // ➕ รวมเวลารถติดเข้าไป
+                    //  รวมเวลารถติดเข้าไป
                     minute += (int) jamMinutes;
 
                     // ปรับถ้านาทีเกิน 60

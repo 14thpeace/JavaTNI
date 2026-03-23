@@ -55,7 +55,7 @@ public class MotorcycleTaxi extends JFrame {
                     }
 
 
-                    // ⏱ เวลา (วินเร็ว)
+                    // เวลา
                     double speed = 40.0;
                     double timeHour = distance / speed;
 

@@ -31,6 +31,7 @@ public class Walk extends JFrame {
         calculateButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 try {
                     double distance = Double.parseDouble(InputDistance.getText());
 
@@ -45,7 +46,7 @@ public class Walk extends JFrame {
                     int hour = (int) timeHour;
                     int minute = (int) ((timeHour - hour) * 60);
 
-                    // 🔥 แสดงผล (ฟรี)
+                    //ฟรี
                     JOptionPane.showMessageDialog(null,
                             "Transport: Walk 🚶\n" +
                                     "Distance: " + distance + " km\n" +

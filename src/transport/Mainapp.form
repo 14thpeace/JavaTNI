@@ -3,9 +3,11 @@
   <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="1740" height="1141"/>
     </constraints>
-    <properties/>
+    <properties>
+      <foreground color="-1"/>
+    </properties>
     <border type="none"/>
     <children>
       <grid id="c83d9" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -13,15 +15,29 @@
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-9013383"/>
+          <font name="Angsana New"/>
+          <foreground color="-1"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="758fb" class="javax.swing.JButton" binding="linkStartButton">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="2" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="350" height="100"/>
+                <preferred-size width="350" height="100"/>
+                <maximum-size width="350" height="100"/>
+              </grid>
             </constraints>
             <properties>
-              <text value="LINK START"/>
+              <background color="-13903590"/>
+              <enabled value="true"/>
+              <font name="Monospaced" size="33" style="1"/>
+              <foreground color="-16777216"/>
+              <hideActionText value="true"/>
+              <horizontalTextPosition value="11"/>
+              <text value="🚆 LINK START 🚆"/>
             </properties>
           </component>
         </children>
@@ -31,15 +47,20 @@
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-1"/>
+          <foreground color="-1"/>
+        </properties>
         <border type="none"/>
         <children>
-          <component id="e0d50" class="javax.swing.JLabel">
+          <component id="e0d50" class="javax.swing.JLabel" binding="logoLabel">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="TNI TRANSPORT CALCULATOR"/>
+              <foreground color="-1"/>
+              <icon value="transport/BCtni.png"/>
+              <text value=""/>
             </properties>
           </component>
         </children>

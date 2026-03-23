@@ -44,7 +44,7 @@ public class BusOrange extends JFrame {
 
                     double price;
 
-                    // 💸 คิดราคาตามระยะ
+                    //  คิดราคาตามระยะ
                     if (distance <= 4) {
                         price = 12;
                     } else if (distance <= 8) {
@@ -57,7 +57,7 @@ public class BusOrange extends JFrame {
                         price = 20;
                     }
 
-                    // ⏱ เวลาเดินทาง
+                    //  เวลาเดินทาง
                     double speed = 25.0;
                     double timeHour = distance / speed;
 
@@ -65,7 +65,7 @@ public class BusOrange extends JFrame {
                     int minute = (int) ((timeHour - hour) * 60);
 
                     JOptionPane.showMessageDialog(null,
-                            "Transport: Bus (Orange) 🟧🚌\n" +
+                            "Transport: Bus (Orange) 🚌\n" +
                                     "Distance: " + distance + " km\n" +
                                     "Time: " + hour + " hr " + minute + " min\n" +
                                     "Price: " + price + " Baht");

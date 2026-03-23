@@ -42,10 +42,10 @@ public class BusRed extends JFrame {
                         return;
                     }
 
-                    // 💸 ราคา (ตลอดสาย)
+                    //  ราคา (ตลอดสาย)
                     double price = 8;
 
-                    // ⏱ เวลาเดินทาง
+                    // เวลาเดินทาง
                     double speed = 25.0; // km/h
                     double timeHour = distance / speed;
 

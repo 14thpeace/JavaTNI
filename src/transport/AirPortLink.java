@@ -19,7 +19,7 @@ public class AirPortLink extends JFrame {
     public AirPortLink(){
         setContentPane(panel1);
         setTitle("Airport Rail Link");
-        setSize(700, 500);
+        setSize(900, 700);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

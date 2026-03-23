@@ -44,7 +44,7 @@ public class BusBlue extends JFrame {
 
                     double price;
 
-                    // 💸 คิดราคา NGV
+                    //  คิดราคา
                     if (distance <= 8) {
                         price = 15;
                     } else if (distance <= 16) {
@@ -53,9 +53,7 @@ public class BusBlue extends JFrame {
                         price = 25;
                     }
 
-                    // 🚪 ทางด่วน (optional)
-
-                    // ⏱ เวลา
+                    //  เวลา
                     double speed = 30.0;
                     double timeHour = distance / speed;
 
@@ -63,7 +61,7 @@ public class BusBlue extends JFrame {
                     int minute = (int) ((timeHour - hour) * 60);
 
                     JOptionPane.showMessageDialog(null,
-                            "Transport: Bus (Blue NGV) 🔵🚌\n" +
+                            "Transport: Bus (Blue NGV) 🚌\n" +
                                     "Distance: " + distance + " km\n" +
                                     "Time: " + hour + " hr " + minute + " min\n" +
                                     "Price: " + price + " Baht");
