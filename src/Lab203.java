@@ -42,7 +42,7 @@ public class Lab203 {
         System.out.println();
     }
 
-    // เพิ่มขนาดอาร์เรย์ 1 ตำแหน่ง
+
     public static String[] addArraySize(String[] subjects) {
         String[] newSubjects = new String[subjects.length + 1];
 
@@ -53,7 +53,7 @@ public class Lab203 {
         return newSubjects;
     }
 
-    // ลบข้อมูลตามตำแหน่งที่กำหนด
+
     public static String[] deleteElement(int index, String[] subjects) {
         String[] newSubjects = new String[subjects.length - 1];
 
@@ -68,7 +68,7 @@ public class Lab203 {
         return newSubjects;
     }
 
-    // อัปเดตข้อมูลตามตำแหน่งที่กำหนด
+
     public static String[] updateElement(int index, String value, String[] subjects) {
         String[] newSubjects = new String[subjects.length];
 
