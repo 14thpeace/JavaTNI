@@ -2,32 +2,44 @@ import java.util.Scanner;
 
 public class Payment {
 
+    // รับชำระเงินและตรวจสอบวิธีการชำระเงิน
     public boolean pay(Scanner sc, int total) {
 
+        int choice;
+
+        // แสดงยอดเงินที่ต้องชำระ
         System.out.println("\n========== PAYMENT ==========");
         System.out.println("Total: " + total + " Baht");
 
-        System.out.println("[1] Cash");
-        System.out.println("[2] QR Payment");
-        System.out.print("Select payment method: ");
+        // วนลูปจนกว่าจะเลือกวิธีชำระเงินถูกต้อง
+        while (true) {
 
-        int choice = sc.nextInt();
+            // แสดงตัวเลือกวิธีชำระเงิน
+            System.out.println("\n[1] Cash");
+            System.out.println("[2] QR Payment");
+            System.out.print("Select payment method: ");
 
-        switch (choice) {
+            // รับตัวเลือกจากผู้ใช้
+            choice = sc.nextInt();
 
-            case 1:
+            // กรณีเลือกชำระเงินสด
+            if (choice == 1) {
+
                 int money;
 
+                // วนลูปจนกว่าจะใส่เงินเพียงพอ
                 do {
                     System.out.print("Insert money: ");
                     money = sc.nextInt();
 
+                    // ตรวจสอบจำนวนเงิน
                     if (money < total) {
                         System.out.println("Not enough money!");
                     }
 
                 } while (money < total);
 
+                // คำนวณเงินทอน
                 int change = money - total;
 
                 System.out.println("Payment successful!");
@@ -35,16 +47,29 @@ public class Payment {
 
                 return true;
 
-            case 2:
+            }
+
+            // กรณีเลือกชำระเงินผ่าน QR Code
+            else if (choice == 2) {
+
                 System.out.println("\nQR Payment");
                 System.out.println("Scan the QR code to pay.");
+
+                // จำลองการชำระเงินสำเร็จ
                 System.out.println("Payment successful!");
 
                 return true;
 
-            default:
+            }
+
+            // กรณีเลือกหมายเลขไม่ถูกต้อง
+            else {
+
                 System.out.println("Invalid payment method!");
-                return false;
+                System.out.println("Please select again.");
+
+                // กลับไปแสดงตัวเลือกใหม่ใน while
+            }
         }
     }
 }
